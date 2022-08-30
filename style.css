@@ -1,0 +1,41 @@
+.container{
+    margin:0;
+    height:100vh;
+    grid-gap: 3px;
+display:grid;
+grid-template-columns:1fr 2fr 1fr;
+grid-template-areas:
+    "header"
+    "main"
+    "widget"
+    "footer";
+ grid-template-rows: 1fr;
+
+}
+.header{
+    
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background-color:rgb(189, 51, 46);
+}
+
+.site-main{
+    
+    grid-column:2/3;
+    grid-row:1/4;
+    background-color:rgb(177, 40, 147);
+}
+
+.widget-area{
+    grid-row: 1/5;
+    background-color:aquamarine;
+}
+
+.site-footer{
+    
+   grid-column: 2/3;
+    background-color:rgb(209, 35, 64);
+}
+
+
+
